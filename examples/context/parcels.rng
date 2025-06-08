@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:doc="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="parcels">
+      <attribute name="delivery-date">
+        <data type="date"/>
+      </attribute>
+      <attribute name="max-weight">
+        <data type="positiveInteger"/>
+      </attribute>
+      <oneOrMore>
+        <element name="parcel">
+          <attribute name="date">
+            <data type="date"/>
+          </attribute>
+          <attribute name="weight">
+            <data type="positiveInteger"/>
+          </attribute>
+          <element name="contents">
+            <text/>
+          </element>
+        </element>
+      </oneOrMore>
+    </element>
+  </start>
+</grammar>

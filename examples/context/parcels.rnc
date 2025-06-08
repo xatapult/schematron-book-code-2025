@@ -1,0 +1,13 @@
+default namespace = ""
+namespace doc = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace xsi = "http://www.w3.org/2001/XMLSchema-instance"
+start =
+  element parcels {
+    attribute delivery-date { xsd:date },
+    attribute max-weight { xsd:positiveInteger },
+    element parcel {
+      attribute date { xsd:date },
+      attribute weight { xsd:positiveInteger },
+      element contents { text }
+    }+
+  }

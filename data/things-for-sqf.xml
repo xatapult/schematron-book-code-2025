@@ -1,0 +1,6 @@
+<things>
+  <thing name="thing 1" type="normal"/>
+  <thing name="thing 2" type="outstanding"/>
+  <thing name="thing 3" type="special"/>
+  <thing type="normal"/>
+</things>
