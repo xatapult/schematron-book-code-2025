@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
   <pattern>
     <rule context="ID">
       <assert test="string-length(.) eq 9">

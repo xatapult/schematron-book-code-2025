@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 1 - Define the QuickFix namespace: -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3"
   xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
 
   <pattern>

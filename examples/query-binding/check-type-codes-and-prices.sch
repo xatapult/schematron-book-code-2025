@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 1 - Define the XSLT namespace on the root element: -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"  
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" queryBinding="xslt3">
 
   <!-- 2 - Define a namespace for the functions as an <ns> element: -->

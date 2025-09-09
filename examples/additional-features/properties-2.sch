@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3">
- 
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+  
+  <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
+  
   <properties>
     <property id="programmer-alert">Programmers, watch out!</property>
     <property id="check-rounding-error">

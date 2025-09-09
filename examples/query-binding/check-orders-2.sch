@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 1 - Define the XSLT namespace: -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"  
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" queryBinding="xslt3">  
   
   <!-- 2 - Define a key using the XSLT key instruction: -->

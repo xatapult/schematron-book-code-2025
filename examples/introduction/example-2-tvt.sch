@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
+  queryBinding="xslt3">
   
   <pattern>
     <rule context="article">
       <assert test="starts-with(@code, /inventory-list/@depcode)">
-        The article code must start with the right prefix 
-        for <value-of select="name"/>
+        The article code must start with the right prefix for {name}
       </assert>
     </rule>
   </pattern>

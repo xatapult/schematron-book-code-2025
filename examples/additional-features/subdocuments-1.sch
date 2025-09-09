@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
  
   <ns prefix="xi" uri="http://www.w3.org/2001/XInclude"/>
   

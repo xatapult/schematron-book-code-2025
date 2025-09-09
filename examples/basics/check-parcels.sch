@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
   
   <!-- 1 - Define the number of days a parcel's date must be before the 
     delivery date and turn this into a duration: -->
