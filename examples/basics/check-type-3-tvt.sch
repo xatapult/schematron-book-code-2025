@@ -4,7 +4,7 @@
   <pattern>
     <rule context="@type">
       <assert test="(. eq 'normal') or (. eq 'special')">
-        The type must be normal or special, not <value-of select="."/>
+        The type must be normal or special, not {.}
       </assert>
     </rule>
   </pattern>

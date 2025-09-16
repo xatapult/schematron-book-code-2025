@@ -3,7 +3,9 @@
   queryBinding="xslt3">
   <pattern>
     <rule context="@type">
-      <report test="(. eq 'normal') or (. eq 'special')">Type OK!</report>
+      <assert test="(. eq 'normal') or (. eq 'special')">
+        The type of {../@name} must be normal or special, not {.}
+      </assert>
     </rule>
   </pattern>
 </schema>
