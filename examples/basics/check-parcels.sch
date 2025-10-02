@@ -24,8 +24,8 @@
       <let name="total-parcels-weight" as="xs:double" 
         value="sum(parcel/@weight)"/>
       <assert test="$total-parcels-weight le $max-weight">
-        The total weight ({$total-parcels-weight}) is 
-        more than the allowed maximum ({$max-weight})
+        The total weight <value-of select="$total-parcels-weight"/> is 
+        more than the allowed maximum <value-of select="$max-weight"/>
       </assert>
     </rule>
   
@@ -35,10 +35,10 @@
       <let name="parcel-date" as="xs:date" value="xs:date(@date)"/>
       <assert 
         test="($delivery-date - $parcel-date) gt  
-                                          $delivery-day-limit-as-duration">
-          The parcel's date ({$parcel-date}) must be 
-          more than {$delivery-day-limit} days 
-          before the delivery date {$delivery-date}
+                $delivery-day-limit-as-duration">
+          The parcel's date <value-of select="$parcel-date"/> must be 
+        more than <value-of select="$delivery-day-limit"/> days 
+        before the delivery date <value-of select="$delivery-date"/>
       </assert>
     </rule>
     
