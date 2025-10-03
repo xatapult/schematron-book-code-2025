@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
+  queryBinding="xslt3">
 
-  <pattern>
+  <group>
     <rule context="thing">
       <assert test="@type = ('normal', 'special', 'deprecated')" 
         diagnostics="type-message-en type-message-nl"/>
     </rule>
-  </pattern>
+  </group>
   
   <diagnostics xml:lang="en">
     <diagnostic id="type-message-en" >

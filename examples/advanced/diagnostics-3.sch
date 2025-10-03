@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
+  queryBinding="xslt3">
 
-  <pattern>
+  <group>
     <rule context="thing">
       <!-- 1 - Refer to the diagnostics in all languages: -->
       <assert test="(@type eq 'normal') or (@type eq 'special')" 
         diagnostics="type-message-en type-message-nl"/>
     </rule>
-  </pattern>
+  </group>
   
   <diagnostics>
     <!-- 2 - Provide the diagnostics in all languages and set the language 

@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
+  queryBinding="xslt3">
 
   <let name="thing-types" value="('normal', 'special')"/>
   <let name="artifact-types" value="('zork', 'martian')"/>
   
-  <pattern>
+  <group>
     <rule context="thing">
       <assert test="@type = $thing-types" 
         diagnostics="message-1 thing-explanation"/>
     </rule>
-  </pattern>
-  <pattern>
     <rule context="artifact">
       <assert test="@type = $artifact-types" 
         diagnostics="message-1 artifact-explanation"/>
     </rule>
-  </pattern>
+  </group>
   
   <diagnostics>
     <diagnostic id="message-1">
