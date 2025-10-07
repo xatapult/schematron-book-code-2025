@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
+  queryBinding="xslt3">
 
-  <pattern>
+  <group>
 
     <!-- 1 - Define the volume check rule as abstract -->
     <rule abstract="true" id="volume-check">
@@ -24,6 +25,6 @@
       <extends rule="volume-check"/>
     </rule>
 
-  </pattern>
+  </group>
 
 </schema>
