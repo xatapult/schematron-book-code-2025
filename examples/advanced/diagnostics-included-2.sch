@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025"  
   queryBinding="xslt3">
 
   <pattern>
@@ -9,6 +9,6 @@
     </rule>
   </pattern>
   
-  <include href="separate-diagnostics.sch"/>
+  <include href="separate-diagnostics-2.sch#type-diagnostics"/>
   
 </schema>
