@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3"> 
-  <pattern>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025"  
+  queryBinding="xslt3"> 
+  <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+  <group>
     <rule context="ordered-item">
-      <let name="item-id" value="@id-ref"/>
+      <let name="item-id" as="xs:string" value="@id-ref"/>
       <assert test="exists(/*/item[@id eq $item-id])">
         The referenced item <value-of select="$item-id"/> does not exist
       </assert>
     </rule>
-  </pattern>
+  </group>
 </schema>

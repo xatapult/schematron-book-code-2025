@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 1 - Define the XSLT namespace on the root element: -->
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"  
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025"
+  queryBinding="xslt3" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
 
   <!-- 2 - Define a namespace for the functions as an <ns> element: -->
   <ns uri="#functions" prefix="f"/>
@@ -25,15 +26,15 @@
     </xsl:choose>
   </xsl:function>
 
-  <pattern>
+  <group>
     <rule context="thing">
       <!-- 4 - Use the defined function to get the price: -->
-      <let name="expected-price" value="f:get-price(@type)"/>
+      <let name="expected-price" as="xs:double" value="f:get-price(@type)"/>
       <assert test="$expected-price eq xs:double(@price)">
         The price for <value-of select="@name"/> should be 
         <value-of select="$expected-price"/>
       </assert>
     </rule>
-  </pattern>
+  </group>
 
 </schema>
