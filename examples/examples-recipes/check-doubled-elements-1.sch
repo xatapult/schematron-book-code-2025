@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025"  
+  queryBinding="xslt3">
   
-  <pattern>
+  <group>
     <rule context="i">
       <assert test="not(ancestor::i)">
         You cannot have doubled i elements
@@ -17,6 +18,6 @@
         You cannot have doubled b elements
       </assert>      
     </rule>
-  </pattern>
+  </group>
   
 </schema>

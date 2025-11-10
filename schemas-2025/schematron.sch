@@ -21,6 +21,19 @@ THIS SCHEMA HAS BEEN MODIFIED FROM THE SCHEMA DEFINED IN ISO/IEC 19757 3,
 AND SHOULD NOT BE INTERPRETED AS COMPLYING WITH THAT STANDARD."
 -->
 
+<!-- ======================================================================= 
+PROVENANCE:
+
+This RelaxNG Compact schema for Schematron was taken from Annex A 
+of the official Schematron standard: 
+
+ISO/IEC 19757-3:2025 
+Information technology — Document Schema Definition Languages (DSDL)
+Part 3: Rule-based validation using Schematron
+Edition 4, 2025
+======================================================================= -->
+
+
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:lang="en" queryBinding="xslt2"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:key name='abstract-pattern' match='sch:pattern[@abstract="true"]' use='@id'/>

@@ -25,6 +25,17 @@
   THIS SCHEMA HAS BEEN MODIFIED FROM THE SCHEMA DEFINED IN ISO/IEC 19757-3, 
   AND SHOULD NOT BE INTERPRETED AS COMPLYING WITH THAT STANDARD." 
 -->
+
+<!-- ============================================================================================
+  PROVENANCE:
+  
+  This W3C XML Schema for SVRL was converted from the original svrl.rnc schema by
+  oXygen's schema convertor tool.
+  
+  The conversion is an approximation, since some things that are possible in RelaxNG cannot be
+  represented in an XML Schema. After the conversion several manual adjustments had to be made. 
+============================================================================================ -->
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
   targetNamespace="http://purl.oclc.org/dsdl/svrl" xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>

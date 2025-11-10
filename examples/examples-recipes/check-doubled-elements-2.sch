@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025"  
+  queryBinding="xslt3">
   
-  <pattern>
+  <group>
     <!-- 1 - Trigger on all elements we want to check: -->
     <rule context="i|u|b">
       <!-- 2 - Store the name element that triggered this rule in a 
@@ -15,6 +16,6 @@
         elements
       </assert>      
     </rule>
-  </pattern>
+  </group>
   
 </schema>

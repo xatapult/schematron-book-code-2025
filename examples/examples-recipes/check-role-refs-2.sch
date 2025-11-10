@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025"
+  queryBinding="xslt3" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <xsl:key name="role-ids" match="/*/Roles/*" use="@role-id"/>  
   

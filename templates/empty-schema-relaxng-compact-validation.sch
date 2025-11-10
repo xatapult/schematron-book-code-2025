@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model 
   type="application/relax-ng-compact-syntax"
-  href="../schemas/schematron.rnc"
+  href="../schemas-2025/schematron.rnc"
 ?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
   queryBinding="xslt3">

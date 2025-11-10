@@ -2,7 +2,7 @@
 <?xml-model 
   type="application/xml" 
   schematypens="http://purl.oclc.org/dsdl/schematron"
-  href="../schemas/schematron.sch" 
+  href="../schemas-2025/schematron.sch" 
 ?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025" 
   queryBinding="xslt3">

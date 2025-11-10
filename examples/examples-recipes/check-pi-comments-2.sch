@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron"   queryBinding="xslt3">
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" schematronEdition="2025"  
+  queryBinding="xslt3">
   
-  <pattern>
+  <group>
+    
     <rule context="/">
       <!-- Check for pi called process that is *followed* by an element. 
         Since we're on the document-node, this can only be the root element. 
@@ -14,17 +16,13 @@
         There must only be a single process pi
       </assert>
     </rule>
-  </pattern>
-  
-  <pattern>
+    
     <rule context="/processing-instruction(process)">
       <assert test="contains(., 'type=&quot;full&quot;')">
         The process pi must contain type="full"
       </assert>
     </rule>
-  </pattern>
-  
-  <pattern>
+    
     <rule context="/*">
       <!-- The following test expression works as follows: 
         * Take all nodes (all types) underneath the root element: node().
@@ -42,6 +40,6 @@
         There must be a comment mentioning ACMEDATA as first child of the root element
       </assert>
     </rule>
-  </pattern>
-  
+    
+  </group>
 </schema>
