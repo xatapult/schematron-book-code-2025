@@ -8,6 +8,7 @@
         The article code must start with the right prefix
       </assert>
     </rule>
+    
   </pattern>
   
 </schema>
