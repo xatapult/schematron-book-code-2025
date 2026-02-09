@@ -4,13 +4,15 @@
 
   <group>
     <rule context="title">
-      <assert test="string-length(.) le 45">The title is longer than 45 characters</assert>
+      <assert test="string-length(.) le 45">The title is longer than 45 
+        characters</assert>
     </rule>
   </group>
   
   <group>
     <rule context="/*">
-      <assert test="count(//para) ge 3">There must be at least 3 paragraphs</assert>
+      <assert test="count(//para) ge 3">There must be at least 3 
+        paragraphs</assert>
     </rule>
   </group>
 

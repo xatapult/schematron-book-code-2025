@@ -7,7 +7,8 @@
     <active pattern="check-title-length"/>
   </phase>
   
-  <!-- 2 - Define a phase that checks the title length and the number of paragraphs -->
+  <!-- 2 - Define a phase that checks the title length and the number of 
+    paragraphs -->
   <phase id="titles-and-paragraphs">
     <active pattern="check-title-length"/>
     <active pattern="check-para-count"/>
@@ -16,13 +17,15 @@
   <!-- 3 - The actual groups: -->
   <group id="check-title-length">
     <rule context="title">
-      <assert test="string-length(.) le 45">The title is longer than 45 characters</assert>
+      <assert test="string-length(.) le 45">The title is longer than 45 
+        characters</assert>
     </rule>
   </group>
   
   <group id="check-para-count">
     <rule context="/*">
-      <assert test="count(//para) ge 3">There must be at least 3 paragraphs</assert>
+      <assert test="count(//para) ge 3">There must be at least 3 
+        paragraphs</assert>
     </rule>
   </group>
 

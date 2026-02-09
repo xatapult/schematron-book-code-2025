@@ -5,8 +5,8 @@
   <pattern>
     <rule context="article">
       <assert test="starts-with(@code, /inventory-list/@depcode)">
-        The article code (<value-of select="@code"/>) must start with the right 
-        prefix (<value-of select="/inventory-list/@depcode"/>) 
+        The article code (<value-of select="@code"/>) must start with the 
+        right prefix (<value-of select="/inventory-list/@depcode"/>) 
         for <value-of select="name"/>
       </assert>
     </rule>
