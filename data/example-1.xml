@@ -1,11 +1,11 @@
 <inventory-list depcode="IMP">
   <article code="IMP0001">
     <name>Bolts</name>
-    <description>Nuts to secure things with</description>
+    <description>Bolts to secure things with</description>
   </article>
   <article code="IMP0002">
     <name>Nuts</name>
-    <description>Bolts to turn on the nuts</description>
+    <description>Nuts to screw onto the bolts</description>
   </article>
   <article code="EXP0234">
     <name>Bananas</name>
