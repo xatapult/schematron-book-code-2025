@@ -2,8 +2,8 @@
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" 
   schematronEdition="2025" queryBinding="xslt3">
 
-  <let name="thing-types" value="('normal', 'special')"/>
-  <let name="artifact-types" value="('zork', 'martian')"/>
+  <let name="thing-types" as="xs:string+" value="('normal', 'special')"/>
+  <let name="artifact-types" as="xs:string+" value="('zork', 'martian')"/>
   
   <group>
     <rule context="thing">
